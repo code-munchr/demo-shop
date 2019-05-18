@@ -26,8 +26,8 @@ class Api::ItemsController < ApplicationController
   private
 
   def item_params
-    params.require(:event).permit(
-      :id,
+    params.require(:item).permit(
+      
       :name,
       :quantity
     )
