@@ -29,7 +29,8 @@ class Api::ItemsController < ApplicationController
     params.require(:item).permit(
       
       :name,
-      :quantity
+      :quantity,
+      :avatar
     )
   end
 end
