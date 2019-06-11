@@ -14,6 +14,13 @@ local:
 #   region: us-east-1
 #   bucket: your_own_bucket
 
+ amazon:
+  service: S3
+  access_key_id: "AKIAWRPUYBFWMND7PYME"
+  secret_access_key: "fIHCY+R2l8hEly40KZH93Kfb7AM9i887C0Ipd2vM"
+  region: "us-east-1"
+  bucket: "ss3ss"
+
 # Remember not to checkin your GCS keyfile to a repository
 # google:
 #   service: GCS

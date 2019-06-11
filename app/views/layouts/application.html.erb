@@ -7,9 +7,16 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag "style" %>
-    <%= stylesheet_link_tag "menu" %>
-   
+    
+    <%= stylesheet_link_tag "main_styles" %>
+    <%= stylesheet_link_tag "responsive" %>
+    <%= stylesheet_link_tag "font-awesome-4.7.0/css/font-awesome.min.css" %>
+    <%= stylesheet_link_tag "OwlCarousel2-2.2.1/owl.carousel.css" %>
+    <%= stylesheet_link_tag "OwlCarousel2-2.2.1/owl.theme.default.css" %>
+    <%= stylesheet_link_tag "OwlCarousel2-2.2.1/animate.css" %>
+  
+
+ 
 
    
    
@@ -17,5 +24,12 @@
 
   <body>
     <%= yield %>
+    <%= javascript_include_tag "greensock/TweenMax.min.js", "greensock/TimelineMax.min.js", "scrollmagic/ScrollMagic.min.js","greensock/animation.gsap.min.js","greensock/ScrollToPlugin.min.js", "OwlCarousel2-2.2.1/owl.carousel.js", "parallax-js-master/parallax.min.js", "Isotope/isotope.pkgd.min.js", "Isotope/fitcolumns.js", "custom.js" %>
   </body>
+   
+
+   
+   
+
+
 </html>

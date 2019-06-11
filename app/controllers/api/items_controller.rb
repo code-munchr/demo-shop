@@ -30,7 +30,7 @@ class Api::ItemsController < ApplicationController
       
       :name,
       :quantity,
-      :avatar
+      images: []
     )
   end
 end

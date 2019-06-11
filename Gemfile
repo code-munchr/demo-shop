@@ -6,7 +6,8 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'popper_js'
 gem 'tether-rails'
-gem "paperclip", "~> 6.0.0"
+
+gem "aws-sdk-s3", require: false
 ruby '2.4.1'
 gem 'webpacker', '>= 4.0.x'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
