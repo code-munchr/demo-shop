@@ -14,6 +14,7 @@ class Api::ItemsController < ApplicationController
   end
 
   def destroy
+
     respond_with Item.destroy(params[:id])
   end
 
@@ -30,6 +31,9 @@ class Api::ItemsController < ApplicationController
       
       :name,
       :quantity,
+      :price,
+      :category_id,
+
       images: []
     )
   end

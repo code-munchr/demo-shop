@@ -6,7 +6,7 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'popper_js'
 gem 'tether-rails'
-
+gem 'pry', '~> 0.12.2'
 gem "aws-sdk-s3", require: false
 ruby '2.4.1'
 gem 'webpacker', '>= 4.0.x'

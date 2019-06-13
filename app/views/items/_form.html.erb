@@ -1,0 +1,31 @@
+
+  <%= form_with(model: item, local: true) do |form| %>
+  <% if item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+   <% end %>
+
+
+  <%= simple_form_for(@item) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+
+<%= form_for @item, url: {action: "create"}, html: {class: "nifty_form"} do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :price %>
+  <%= collection_radio_buttons(:item, :category_id, Category.all, :id, :Title) %>
+  <%= f.text_field :quantity %>
+
+  <%= f.file_field :images,multiple: true, direct_upload: true %>
+  <%= f.submit "Create" %>
+<% end %>
+<% end %>
