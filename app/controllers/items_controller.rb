@@ -4,6 +4,7 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
+    cookies[:user_cart]= []
     @items = Item.all
   end
 
